@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Full Pipeline (main.py)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Train Model",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/train_model.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/src"
+    },
+    {
+      "name": "Predict",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/predict.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/src"
+    }
+  ]
+}
